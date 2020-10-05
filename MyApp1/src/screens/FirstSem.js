@@ -11,7 +11,7 @@ const FirstSem = ()=>{
         {name: "6. CSE 4107",key:'6'},
     ];
     return(
-        <View>
+        <View style={styles.viewStyles}>
             <Text></Text>
             <FlatList>
                 data = {sem1}

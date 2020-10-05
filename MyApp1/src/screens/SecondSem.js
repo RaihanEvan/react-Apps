@@ -13,8 +13,7 @@ const SecondSem = ()=>{
     ];
 
     return(
-        <View>
-            <Text></Text>
+        <View style={styles.viewStyles}>
             <FlatList>
                 data={sem2}
                 renderItem={function({item}){

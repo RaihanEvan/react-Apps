@@ -12,8 +12,7 @@ const ThirdSem = ()=>{
         {name: "6. CSE 4307",key:'6'},
     ];
     return(
-        <View>
-            <Text></Text>
+        <View style={styles.viewStyles}>
             <FlatList>
                 data={sem3}
                 renderItem={function({item}){
@@ -30,7 +29,7 @@ const styles=StyleSheets.create(
 
         },
         viewStyles:{
-
+            justifyContent:'space-around',
         },
     }
 );
