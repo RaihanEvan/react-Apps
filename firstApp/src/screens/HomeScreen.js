@@ -6,12 +6,20 @@ const HomeScreen = (props)=>{
     return(
         <View>
             <Text style={styles.textStyle}>Hi There! Its Home Screen</Text>
-        <Button title='Go to List Screen' 
-        onPress={
-            function(){
+            <Button title='Go to List Screen' 
+                onPress={
+                 function(){
                // console.log("Button Pressed");
                 props.navigation.navigate("List");
         }}></Button>
+        <Button 
+        title="Storage Screen"
+        onPress={
+            function(){
+                props.navigation.navigate("Storage");
+            }
+        }
+        />
         <TouchableOpacity onPress={function(){
             console.log("Image Pressed");
         }}>

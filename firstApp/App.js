@@ -26,6 +26,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from "./src/screens/HomeScreen";
 import ListScreen from "./src/screens/ListScreen";
+import ImageScreen from './src/screens/ImageScreen';
+import StorageScreen from './src/screens/StorageScreen';
 
 const stack = createStackNavigator();
 
@@ -35,6 +37,9 @@ function App(){
       <stack.Navigator initialRouteName="Home">
         <stack.Screen name="Home" component={HomeScreen}></stack.Screen>
         <stack.Screen name="List" component={ListScreen}></stack.Screen>
+        <stack.Screen name="Image" component={ImageScreen}></stack.Screen>
+        <stack.Screen name="Storage" component={StorageScreen}></stack.Screen>
+
       </stack.Navigator>
     </NavigationContainer>
   );
