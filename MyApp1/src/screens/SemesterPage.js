@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Button,StyleSheets} from 'react-native';
+import {Text,View,Button,StyleSheets,FlatList} from 'react-native';
 
 const SemesterPage = ()=>{
     const firstSem = [
@@ -29,7 +29,9 @@ const SemesterPage = ()=>{
     return(
         <View>
             <Text></Text>
-
+            <FlatList>
+                
+            </FlatList>
             <Button 
             title="1st Semester"
             onPress={
