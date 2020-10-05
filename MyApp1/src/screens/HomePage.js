@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,StyleSheet,Button,View,Image,TouchableOpacity} from 'react-native';
+import {Text,Button,View,Image,TouchableOpacity} from 'react-native';
 
 const HomePage = (props)=>{
     return(
@@ -15,11 +15,8 @@ const HomePage = (props)=>{
                     function(){
                         props.navigation.navigate("Profile");
                     }}></Button>
-                <Image source = {{
-                    height:300,
-                    width:200,
-                    uri:"https://en.wikipedia.org/wiki/File:Islamic_University_of_Technology_(coat_of_arms).png",
-                }}></Image>
+                <Image source = {require('./../../assets/iut-logo.png') 
+                }></Image>
             </TouchableOpacity>
             <Button title='Semester-wise Course List' color='purple' borderWidth='1' padding='25' borderColor='black' onPress={
                     function(){
@@ -32,11 +29,6 @@ const HomePage = (props)=>{
         </View>
     );
 }
-const styles = StyleSheet.create(
-    {
-
-        
-    }
-);
+//const styles = StyleSheet.create();
 
 export default HomePage;

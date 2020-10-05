@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Button,StyleSheets,FlatList} from 'react-native';
+import {Text,View,StyleSheet,FlatList} from 'react-native';
 
 const FirstSem = ()=>{
     const sem1 = [
@@ -12,24 +12,26 @@ const FirstSem = ()=>{
     ];
     return(
         <View style={styles.viewStyles}>
-            <Text></Text>
+            <Text style={styles.textStyles}>First Semester</Text>
             <FlatList>
                 data = {sem1}
                 renderItem = {function({item}){
-                    return(<Text style={style.textStyle}>{item.name}</Text>)
+                    return(<Text style={style.textStyles}>{item.name}</Text>)
                 }}
             </FlatList>
         </View>
     );
 };
 
-const styles=StyleSheets.create(
+const styles = StyleSheet.create(
     {
         textStyles:{
-
+            alignSelf:'center',
+            fontSize:39,
         },
         viewStyles:{
-
+            alignSelf:'center',
+            margin:20,
         },
     }
 );

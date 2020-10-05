@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Button,StyleSheets,FlatList} from 'react-native';
+import {View,Button,StyleSheet} from 'react-native';
 
 const SemesterPage = ()=>{
     return(
@@ -32,13 +32,11 @@ const SemesterPage = ()=>{
     );
 };
 
-const styles=StyleSheets.create(
+const styles=StyleSheet.create(
     {
-        textStyles:{
-
-        },
         viewStyles:{
-
+            alignSelf:'center',
+            margin:20,
         },
     }
 );

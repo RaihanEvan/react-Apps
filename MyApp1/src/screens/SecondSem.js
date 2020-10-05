@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Button,StyleSheets,FlatList} from 'react-native';
+import {Text,View,StyleSheet,FlatList} from 'react-native';
 
 const SecondSem = ()=>{
 
@@ -14,6 +14,7 @@ const SecondSem = ()=>{
 
     return(
         <View style={styles.viewStyles}>
+            <Text style={styles.textStyles}>Second Semester</Text>
             <FlatList>
                 data={sem2}
                 renderItem={function({item}){
@@ -24,13 +25,15 @@ const SecondSem = ()=>{
     );
 };
 
-const styles=StyleSheets.create(
+const styles=StyleSheet.create(
     {
         textStyles:{
-
+            alignSelf:'center',
+            fontSize:39,
         },
         viewStyles:{
-
+            alignSelf:'center',
+            margin:20,
         },
     }
 );

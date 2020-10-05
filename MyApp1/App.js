@@ -28,6 +28,9 @@ import HomePage from "./src/screens/HomePage";
 import ProfilePage from "./src/screens/ProfilePage";
 import SemesterPage from './src/screens/SemesterPage';
 import FacultyPage from './src/screens/FacultyPage';
+import FirstSem from './src/screens/FirstSem';
+import SecondSem from './src/screens/SecondSem';
+import ThirdSem from './src/screens/ThirdSem';
 
 const stack = createStackNavigator();
 
@@ -35,10 +38,13 @@ function App(){
   return(
     <NavigationContainer>
       <stack.Navigator initialRouteName="Home">
-        <stack.Screen name="Home" component={HomePage}></stack.Screen>
-        <stack.Screen name="Profile" component={ProfilePage}></stack.Screen>
-        <stack.Screen name="Semesters" component={SemesterPage}></stack.Screen>
-        <stack.Screen name="Faculty List" component={FacultyPage}></stack.Screen>
+        <stack.Screen name="HomePage" component={HomePage}></stack.Screen>
+        <stack.Screen name="ProfilePage" component={ProfilePage}></stack.Screen>
+        <stack.Screen name="SemesterPage" component={SemesterPage}></stack.Screen>
+        <stack.Screen name="FacultyPage" component={FacultyPage}></stack.Screen>
+        <stack.Screen name="Semester-1" component={FirstSem}></stack.Screen>
+        <stack.Screen name="Semester-2" component={SecondSem}></stack.Screen>
+        <stack.Screen name="Semester-3" component={ThirdSem}></stack.Screen>
       </stack.Navigator>
     </NavigationContainer>
   );
