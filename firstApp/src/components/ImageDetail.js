@@ -37,6 +37,8 @@ const styles = StyleSheet.create(
             borderColor:'blue',
             borderWidth:5,
             margin:5,
+            flexDirection:'row',
+            alignSelf:'flex-end',
         },
     }
 );
