@@ -5,7 +5,7 @@ const ImageDetail = (props)=>{
     console.log(props);
     return(
         <View>
-            <Text style={styles.textStyle}>Image Detail</Text>
+            <Text style={styles.textStyle}>{props.title}</Text>
         </View>
     );
 }
