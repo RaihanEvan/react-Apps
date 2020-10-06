@@ -13,18 +13,18 @@ const HomePage = (props)=>{
             <TouchableOpacity>
                 <Button title='My Profile' color='red' borderWidth='1' padding='25' borderColor='black' onPress={
                     function(){
-                        props.navigation.navigate("Profile");
+                        props.navigation.navigate("ProfilePage");
                     }}></Button>
                 <Image source = {require('./../../assets/iut-logo.png') 
                 }></Image>
             </TouchableOpacity>
             <Button title='Semester-wise Course List' color='purple' borderWidth='1' padding='25' borderColor='black' onPress={
                     function(){
-                        props.navigation.navigate("Semester");
+                        props.navigation.navigate("SemesterPage");
                     }}></Button>
             <Button title='List of Faculty Members' color='blue' borderWidth='1' padding='25' borderColor='black' onPress={
                     function(){
-                        props.navigation.navigate("Faculty");
+                        props.navigation.navigate("FacultyPage");
                     }}></Button>
         </View>
     );

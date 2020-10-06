@@ -17,7 +17,7 @@ const styles = StyleSheet.create(
     {
         textStyle:{
             fontFamily:"",
-            fontSize:10,
+            fontSize:18,
             color:"green",
             backgroundColor:'black',
         },
