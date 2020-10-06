@@ -1,42 +1,49 @@
 import React from 'react';
-import {View,Button,StyleSheet} from 'react-native';
+import { View, Button, StyleSheet } from 'react-native';
+import FirstSem from'../screens/FirstSem';
 
-const SemesterPage = (props)=>{
-    return(
+const SemesterPage = (props) => {
+    return (
         <View style={styles.viewStyles}>
-            <Button 
-            title="1st Semester"
-            onPress={
-                function(){
-                        props.navigation.navigate("Semester-1");
-                    }}
-            color='red'
-            />
-            <Button 
-            title="2nd Semester"
-            onPress={
-                function(){
-                        props.navigation.navigate("Semester-2");
-                    }}
-            color='green'
-            />
-            <Button 
-            title="3rd Semester"
-            onPress={
-                function(){
-                        props.navigation.navigate("Semester-3");
-                    }}
-            color='blue'
-            />
+            <View>
+                <Button
+                    title="1st Semester"
+                    onPress={
+                        function () {
+                            props.navigation.navigate("FirstSem");
+                        }}
+                    color='red'
+                />
+            </View>
+            <View>
+                <Button
+                    title="2nd Semester"
+                    onPress={
+                        function () {
+                            props.navigation.navigate("SecondSem");
+                        }}
+                    color='green'
+                />
+            </View>
+            <View>
+                <Button
+                    title="3rd Semester"
+                    onPress={
+                        function () {
+                            props.navigation.navigate("ThirdSem");
+                        }}
+                    color='blue'
+                />
+            </View>
         </View>
     );
 };
 
-const styles=StyleSheet.create(
+const styles = StyleSheet.create(
     {
-        viewStyles:{
-            alignSelf:'center',
-            margin:20,
+        viewStyles: {
+            alignSelf: 'center',
+            margin: 20,
         },
     }
 );

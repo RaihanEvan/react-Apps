@@ -16,7 +16,7 @@ const FirstSem = ()=>{
             <FlatList>
                 data = {sem1}
                 renderItem = {function({item}){
-                    return(<Text style={style.textStyles}>{item.name}</Text>)
+                    return <Text style={style.textStyles}>{item.name}</Text>;
                 }}
             </FlatList>
         </View>

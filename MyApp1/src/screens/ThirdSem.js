@@ -17,7 +17,7 @@ const ThirdSem = ()=>{
             <FlatList>
                 data={sem3}
                 renderItem={function({item}){
-                    return(<Text style={styles.textStyles}>{item.name}</Text>);
+                    return <Text style={styles.textStyles}>{item.name}</Text>;
                 }}
             </FlatList>
         </View>
@@ -29,9 +29,9 @@ const styles=StyleSheet.create(
         textStyles:{
             alignSelf:'center',
             fontSize:39,
+            color:'black',
         },
         viewStyles:{
-            justifyContent:'space-around',
             alignSelf:'center',
             margin:20,
         },

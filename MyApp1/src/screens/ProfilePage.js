@@ -4,7 +4,7 @@ import {Text,View,Image,StyleSheet} from 'react-native';
 const ProfilePage = ()=>{
     return(
         <View>
-            <Image style={styles.dp} source={require('./../../assets/goku.png')}/>
+            <Image style={styles.dp} source={require('./../../assets/evan.jpeg')}/>
             <Text style={styles.textStyle}>Name : H.M. Raihan Evan</Text>
             <Text style={styles.textStyle}>Student ID : 170042028</Text>
             <Text style={styles.textStyle}>Semester : 6th</Text>
@@ -22,9 +22,9 @@ const styles = StyleSheet.create(
             backgroundColor:'black',
         },
         dp:{
-            height:300,
-            width:400,
-            resizeMode:'stretch',
+            height:400,
+            width:250,
+            alignSelf:'center',
         },
     }
 );

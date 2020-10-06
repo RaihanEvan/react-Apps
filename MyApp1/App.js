@@ -42,9 +42,9 @@ function App(){
         <stack.Screen name="ProfilePage" component={ProfilePage}></stack.Screen>
         <stack.Screen name="SemesterPage" component={SemesterPage}></stack.Screen>
         <stack.Screen name="FacultyPage" component={FacultyPage}></stack.Screen>
-        <stack.Screen name="Semester-1" component={FirstSem}></stack.Screen>
-        <stack.Screen name="Semester-2" component={SecondSem}></stack.Screen>
-        <stack.Screen name="Semester-3" component={ThirdSem}></stack.Screen>
+        <stack.Screen name="FirstSem" component={FirstSem}></stack.Screen>
+        <stack.Screen name="SecondSem" component={SecondSem}></stack.Screen>
+        <stack.Screen name="ThirdSem" component={ThirdSem}></stack.Screen>
       </stack.Navigator>
     </NavigationContainer>
   );
