@@ -10,10 +10,14 @@ const HomePage = (props) => {
                 textAlign: 'center', fontWeight: 'bold', fontFamily: 'sans-serif', marginTop: 10
             }}>Welcome!!</Text>
             <Text style={{
-                fontSize: 15,
+                fontSize: 10,
                 color: 'blue',
                 textAlign: 'center',
             }}>This is the Home page of this App!</Text>
+            <TouchableOpacity>
+                <Image style={styles.imgStyle} source={require('./../../assets/iut-logo.png')} />
+                <Text style={styles.textStyle}>Department of CSE {"\n"}Program: SWE</Text>
+            </TouchableOpacity>
             <Button
                 title='My Profile'
                 color='red'
@@ -22,33 +26,29 @@ const HomePage = (props) => {
                 borderColor='black'
                 onPress={
                     function () {
-                        props.navigation.navigate("ProfilePage");
+                        props.navigation.navigate("Profile");
                     }
                 }
             />
-            <TouchableOpacity>
-                <Image style={styles.imgStyle} source={require('./../../assets/iut-logo.png')} />
-                <Text style={styles.textStyle}>Department of CSE{"\n"}Program: SWE{"\n"}{"\n"}</Text>
-            </TouchableOpacity>
             <Button
                 title='Semester-wise Course List'
                 color='purple'
-                borderWidth='1'
+                borderWidth='2'
                 padding='25'
                 borderColor='black'
                 margin='10'
                 onPress={
-                    function () { props.navigation.navigate("SemesterPage"); }
+                    function () { props.navigation.navigate("Semester"); }
                 }
             />
             <Button title='List of Faculty Members'
                 color='blue'
-                borderWidth='1'
+                borderWidth='3'
                 padding='25'
                 borderColor='black'
                 onPress={
                     function () {
-                        props.navigation.navigate("FacultyPage");
+                        props.navigation.navigate("Faculty");
                     }
                 }
             />
@@ -61,7 +61,7 @@ const styles = StyleSheet.create(
             height: 305,
             width: 205,
             alignSelf: 'center',
-            margin:5,
+            margin: 25,
 
         },
         textStyle: {

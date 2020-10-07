@@ -12,13 +12,17 @@ const FirstSem = ()=>{
     ];
     return(
         <View style={styles.viewStyles}>
-            <Text style={styles.textStyles}>First Semester</Text>
-            <FlatList>
+            <Text style={{
+                fontSize: 20,
+                color: 'gray',
+                textAlign: 'center', fontWeight: 'bold', fontFamily: 'sans-serif', marginTop: 10,marginBottom:20,
+            }}>1st Semester</Text>
+            <FlatList
                 data = {sem1}
                 renderItem = {function({item}){
-                    return <Text style={style.textStyles}>{item.name}</Text>;
+                    return <Text style={styles.textStyles}>{item.name}</Text>;
                 }}
-            </FlatList>
+            ></FlatList>
         </View>
     );
 };
@@ -27,7 +31,7 @@ const styles = StyleSheet.create(
     {
         textStyles:{
             alignSelf:'center',
-            fontSize:39,
+            fontSize:35,
         },
         viewStyles:{
             alignSelf:'center',

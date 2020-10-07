@@ -14,13 +14,17 @@ const SecondSem = ()=>{
 
     return(
         <View style={styles.viewStyles}>
-            <Text style={styles.textStyles}>Second Semester</Text>
-            <FlatList>
+            <Text style={{
+                fontSize: 20,
+                color: 'gray',
+                textAlign: 'center', fontWeight: 'bold', fontFamily: 'sans-serif', marginTop: 10,marginBottom:20,
+            }}>Second Semester</Text>
+            <FlatList
                 data={sem2}
                 renderItem={function({item}){
                     return <Text style={styles.textStyles}>{item.name}</Text>;
                 }}
-            </FlatList>
+            ></FlatList>
         </View>
     );
 };

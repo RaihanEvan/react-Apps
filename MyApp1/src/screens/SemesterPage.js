@@ -10,7 +10,7 @@ const SemesterPage = (props) => {
                     title="1st Semester"
                     onPress={
                         function () {
-                            props.navigation.navigate("FirstSem");
+                            props.navigation.navigate("First Semester");
                         }}
                     color='red'
                 />
@@ -20,7 +20,7 @@ const SemesterPage = (props) => {
                     title="2nd Semester"
                     onPress={
                         function () {
-                            props.navigation.navigate("SecondSem");
+                            props.navigation.navigate("Second Semester");
                         }}
                     color='green'
                 />
@@ -30,7 +30,7 @@ const SemesterPage = (props) => {
                     title="3rd Semester"
                     onPress={
                         function () {
-                            props.navigation.navigate("ThirdSem");
+                            props.navigation.navigate("Third Semester");
                         }}
                     color='blue'
                 />

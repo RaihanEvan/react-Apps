@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomePage from "./src/screens/HomePage";
-import ProfilePage from "./src/screens/ProfilePage";
+import HomePage from './src/screens/HomePage';
+import ProfilePage from './src/screens/ProfilePage';
 import SemesterPage from './src/screens/SemesterPage';
 import FacultyPage from './src/screens/FacultyPage';
 import FirstSem from './src/screens/FirstSem';
@@ -38,13 +38,13 @@ function App(){
   return(
     <NavigationContainer>
       <stack.Navigator initialRouteName="Home">
-        <stack.Screen name="HomePage" component={HomePage}></stack.Screen>
-        <stack.Screen name="ProfilePage" component={ProfilePage}></stack.Screen>
-        <stack.Screen name="SemesterPage" component={SemesterPage}></stack.Screen>
-        <stack.Screen name="FacultyPage" component={FacultyPage}></stack.Screen>
-        <stack.Screen name="FirstSem" component={FirstSem}></stack.Screen>
-        <stack.Screen name="SecondSem" component={SecondSem}></stack.Screen>
-        <stack.Screen name="ThirdSem" component={ThirdSem}></stack.Screen>
+        <stack.Screen name="Home" component={HomePage}></stack.Screen>
+        <stack.Screen name="Profile" component={ProfilePage}></stack.Screen>
+        <stack.Screen name="Semester" component={SemesterPage}></stack.Screen>
+        <stack.Screen name="Faculty" component={FacultyPage}></stack.Screen>
+        <stack.Screen name="First Semester" component={FirstSem}></stack.Screen>
+        <stack.Screen name="Second Semester" component={SecondSem}></stack.Screen>
+        <stack.Screen name="Third Semester" component={ThirdSem}></stack.Screen>
       </stack.Navigator>
     </NavigationContainer>
   );
